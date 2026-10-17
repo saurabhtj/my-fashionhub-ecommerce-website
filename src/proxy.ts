@@ -16,21 +16,22 @@ function corsHeaders(origin: string) {
 
 export function proxy(request: NextRequest) {
   const origin = request.headers.get("origin");
-  const allowedOrigin = process.env.CORS_ORIGIN;
+  const configuredOrigin = process.env.CORS_ORIGIN?.trim().replace(/\/+$/, "");
+  const requestOrigin = origin?.trim().replace(/\/+$/, "");
 
-  if (origin && allowedOrigin && origin !== allowedOrigin) {
+  if (requestOrigin && configuredOrigin && requestOrigin !== configuredOrigin) {
     return new NextResponse(null, { status: 403 });
   }
 
   if (request.method === "OPTIONS") {
     return new NextResponse(null, {
       status: 204,
-      headers: origin && allowedOrigin ? corsHeaders(origin) : undefined,
+      headers: origin && configuredOrigin ? corsHeaders(origin) : undefined,
     });
   }
 
   const response = NextResponse.next();
-  if (origin && allowedOrigin) {
+  if (origin && configuredOrigin) {
     for (const [name, value] of Object.entries(corsHeaders(origin))) {
       response.headers.set(name, value);
     }
