@@ -19,4 +19,4 @@ The old SQLite database and its migrations are preserved under `prisma/sqlite-so
 
 ## Deployment status
 
-Deployment configuration is prepared but no GitHub, Render, or Netlify deployment has been created. Render Free Postgres is temporary and must not be used for real orders; see the deployment guide before creating resources.
+The project is pushed to [GitHub](https://github.com/saurabhtj/my-fashionhub-ecommerce-website); Render and Netlify services have not yet been created. Render Free Postgres is temporary and must not be used for real orders; see the deployment guide before creating resources.

@@ -8,7 +8,7 @@ Firebase is not currently used for authentication or storage. Authentication is 
 
 The Render Blueprint is configured for Free Web + Free Postgres because that was selected for a temporary preview. **This is not production-safe:** Render says Free Postgres expires 30 days after creation, then has a 14-day upgrade grace period before the database and its data are deleted. Free web services can sleep or be suspended. Before accepting real orders/payments, choose a persistent paid database plan in the Render Dashboard and confirm its cost manually.
 
-No deployment has been created from this repository yet. The repository, GitHub authorization, Render/Netlify logins, and site-domain assignment still require dashboard/account access.
+The GitHub repository has been created and the project pushed. Render and Netlify services, provider configuration, and site-domain assignment still require dashboard/account access.
 
 ## Environment variables
 
