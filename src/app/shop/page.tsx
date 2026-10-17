@@ -3,9 +3,9 @@
 import React, { useState, useMemo, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import PageLayout from "@/components/PageLayout";
-import ProductCard from "@/components/ProductCard";
-import ProductSearchInput from "@/components/ProductSearchInput";
+import PageLayout from "../../components/PageLayout";
+import ProductCard from "../../components/ProductCard";
+import ProductSearchInput from "../../components/ProductSearchInput";
 import { allProducts, type Product } from "@/lib/data";
 
 const CATEGORIES = ["All", "Women", "Men", "Kids", "Accessories"];

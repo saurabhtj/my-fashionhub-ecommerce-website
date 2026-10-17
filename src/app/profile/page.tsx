@@ -5,7 +5,7 @@ import { useSession, signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import PageLayout from '@/components/PageLayout';
+import PageLayout from '../../components/PageLayout';
 import { dispatchWishlistUpdated } from '@/lib/cartStorage';
 import { isWishlistResponse, type WishlistItem } from '@/lib/wishlist';
 

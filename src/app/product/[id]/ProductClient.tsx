@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
-import PageLayout from '@/components/PageLayout';
+import PageLayout from '../../../components/PageLayout';
 import { Product } from '@/lib/data';
 import { dispatchWishlistUpdated } from '@/lib/cartStorage';
 import { hasWishlistProduct } from '@/lib/wishlist';

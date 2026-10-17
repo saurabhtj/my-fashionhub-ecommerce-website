@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import PageLayout from '@/components/PageLayout';
+import PageLayout from '../../components/PageLayout';
 import Link from 'next/link';
 
 /* ── Real Oruma contact details ── */

@@ -5,14 +5,14 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
-import PageLayout from '@/components/PageLayout';
-import DeliveryAddressBar from '@/components/cart/DeliveryAddressBar';
-import CartItemCard from '@/components/cart/CartItemCard';
-import PriceDetailsCard from '@/components/cart/PriceDetailsCard';
-import SavedForLaterSection from '@/components/cart/SavedForLaterSection';
-import EmptyCart from '@/components/cart/EmptyCart';
-import RemoveConfirmModal from '@/components/cart/RemoveConfirmModal';
-import UndoToast from '@/components/cart/UndoToast';
+import PageLayout from '../../components/PageLayout';
+import DeliveryAddressBar from '../../components/cart/DeliveryAddressBar';
+import CartItemCard from '../../components/cart/CartItemCard';
+import PriceDetailsCard from '../../components/cart/PriceDetailsCard';
+import SavedForLaterSection from '../../components/cart/SavedForLaterSection';
+import EmptyCart from '../../components/cart/EmptyCart';
+import RemoveConfirmModal from '../../components/cart/RemoveConfirmModal';
+import UndoToast from '../../components/cart/UndoToast';
 
 import {
   CartItemType,

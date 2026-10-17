@@ -1,6 +1,6 @@
 import React from 'react';
-import PageLayout from '@/components/PageLayout';
-import ProductCard from '@/components/ProductCard';
+import PageLayout from '../../components/PageLayout';
+import ProductCard from '../../components/ProductCard';
 import { allProducts } from '@/lib/data';
 import { notFound } from 'next/navigation';
 

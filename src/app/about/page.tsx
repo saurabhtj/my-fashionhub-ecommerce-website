@@ -1,6 +1,6 @@
 'use client';
 
-import PageLayout from '@/components/PageLayout';
+import PageLayout from '../../components/PageLayout';
 import Link from 'next/link';
 
 /* ── Real Oruma data ── */
