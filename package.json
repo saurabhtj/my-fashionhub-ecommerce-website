@@ -32,18 +32,18 @@
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "shadcn-ui": "^0.9.5",
-    "three": "^0.186.0"
-  },
-  "devDependencies": {
+    "three": "^0.186.0",
     "@tailwindcss/postcss": "^4",
-    "@types/bcryptjs": "^2.4.6",
+    "tailwindcss": "^4",
+    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react-dom": "^19"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/three": "^0.186.0",
     "eslint": "^9",
-    "eslint-config-next": "16.3.6",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "eslint-config-next": "16.3.6"
   }
 }
